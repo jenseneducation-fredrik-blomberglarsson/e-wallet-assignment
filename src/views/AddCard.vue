@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss">
-h3 {
+.gotoHome {
   box-shadow: 0px 10px 21px -7px #276873;
   background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
   background-color: #599bb3;
@@ -63,13 +63,10 @@ h3 {
   padding: 12px 28px;
   text-decoration: none;
   text-shadow: 0px 0px 0px #3d768a;
-}
-h3 {
   background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
   background-color: #408c99;
-}
-h3 {
   position: relative;
   top: 1px;
+  margin-left: 37%;
 }
 </style>

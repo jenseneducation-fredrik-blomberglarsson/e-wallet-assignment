@@ -1,5 +1,5 @@
 <template>
-  <div class="cardStack">
+  <div class="activeCard">
     <Card :cardDetails="card" />
     {{ cardDetails }}
     <router-link :to="`/card/${$route.params.id}`"></router-link>
@@ -29,5 +29,9 @@ export default {
 <style lang="scss">
 section {
   display: block;
+}
+
+.activeCard {
+  margin-left: 10%;
 }
 </style>

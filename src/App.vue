@@ -13,13 +13,16 @@ export default {};
 
 <style lang="scss">
 #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-family: "PT Mono", monospace;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: PT Mono, monospace;
+  padding: 1rem;
   height: 100vh;
   max-width: 24rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 1rem;
-  margin: 0px auto;
 }
 
 div {

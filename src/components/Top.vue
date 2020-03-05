@@ -1,7 +1,7 @@
 <template>
   <main id="Top">
-    <h1>{{ title }}</h1>
-    <p class="activeCard">{{ activeCard }}</p>
+    <h1 class="title">{{ title }}</h1>
+    <p class="cardTitle">{{ activeCard }}</p>
   </main>
 </template>
 
@@ -14,25 +14,25 @@ export default {
 };
 </script>
 
+
 <style lang="scss">
 #top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-transform: uppercase;
 }
 
-h1,
-p {
-  #top h1,
-  #top p {
-    text-align: center;
-    margin: 0px;
-  }
+.title,
+.cardTitle {
+  text-align: center;
 }
 
-p {
+.cardTitle {
   -webkit-box-flex: 1;
   font-size: 0.8rem;
   font-weight: 600;
@@ -46,7 +46,7 @@ p {
   margin-inline-end: 0px;
 }
 
-h1 {
+.title {
   -webkit-box-flex: 2;
   line-height: 2rem;
   font-size: 2rem;

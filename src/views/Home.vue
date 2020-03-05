@@ -1,9 +1,9 @@
 <template>
   <main id="home">
     <Top :title="title" :activeCard="activeCard" />
-    <section class="cardStack">
+    <section class="cards">
       <router-view></router-view>
-      <ul>
+      <ul class="cardStack">
         <li v-for="card in cards" :key="card.id" class="card-item">
           <router-link :to="'/card/' + card.id">
             <Card :cardDetails="card" />
@@ -48,8 +48,11 @@ export default {
 </script>
 
 <style lang="scss">
-ul {
+.cardStack {
   list-style-type: none;
+  margin: 2rem 0 12rem;
+  display: grid;
+  grid-auto-rows: 4rem;
 }
 
 h2 {
@@ -72,6 +75,7 @@ h2 {
   background-color: #408c99;
 }
 h2 {
+  margin-left: 30%;
   position: relative;
   top: 1px;
 }
